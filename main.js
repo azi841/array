@@ -18,7 +18,7 @@ function getSlice (array, numberOfArrays) {
     return array2;
 }
 
-
-console.log(getSlice([1,2,3,4,5], 3));
+var newArray = getSlice([1,2,3,4,5], 4);
+console.log(newArray);
 
 
