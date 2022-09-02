@@ -1,33 +1,29 @@
 
 
+function getSlice () {
 
-var array = [];
-var size = 5;
+    var array = [];
+    var size = 5;
 
-for (var a=0; a<size; a++){
-    array[a] = prompt('Enter element' + (a+1));
+    for (var i = 0; i<size; i++) {
+        array[i] = prompt('Enter element' + (i+1));
+    }
+
+
+    
+    array2= [];
+    numberOfArrays = prompt();
+   
+    for (i=0; i<numberOfArrays; i++){
+        array2[i] = array[i];
+    }
+    
+    alert(array2);
+
+
 }
 
 
-numberOfArrays = 0;
+getSlice();
 
-
-
-
-numberOfArrays = prompt();
-array2= [];
-
- for (a=0; a<numberOfArrays; a++){
-    array2[a] = array[a]; 
-}
-
-alert(array2);
-
-
-
-
-
-
-
-//console.log(array);
 
