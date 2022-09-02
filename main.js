@@ -2,7 +2,7 @@
 
 function getSlice (array, numberOfArrays) {
 
-    array2= [];
+    let array2 = [];
 
     if (numberOfArrays==undefined) {
         array2=array[0];
