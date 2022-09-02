@@ -2,7 +2,6 @@
 
 function getSlice (array, numberOfArrays) {
 
-    var size = 5;
     array2= [];
 
     if (numberOfArrays==undefined) {
@@ -10,15 +9,18 @@ function getSlice (array, numberOfArrays) {
     }
  
    else {
-    for (i=0; i<numberOfArrays; i++){
-        array2[i] = array[i];
-    }
+     for (i=0; i<numberOfArrays; i++){
+        
+        if (i<array.length) {
+            array2[i] = array[i];
+        }
+     }
     }
     
     return array2;
 }
 
-var newArray = getSlice([1,2,3,4,5], 4);
+let newArray = getSlice([1,2,3,4,5], 7);
 console.log(newArray);
 
 
