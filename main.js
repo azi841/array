@@ -1,29 +1,24 @@
 
 
-function getSlice () {
+function getSlice (array, numberOfArrays) {
 
-    var array = [];
     var size = 5;
-
-    for (var i = 0; i<size; i++) {
-        array[i] = prompt('Enter element' + (i+1));
-    }
-
-
-    
     array2= [];
-    numberOfArrays = prompt();
-   
+
+    if (numberOfArrays==undefined) {
+        array2=array[0];
+    }
+ 
+   else {
     for (i=0; i<numberOfArrays; i++){
         array2[i] = array[i];
     }
+    }
     
-    alert(array2);
-
-
+    return array2;
 }
 
 
-getSlice();
+console.log(getSlice([1,2,3,4,5], 3));
 
 
