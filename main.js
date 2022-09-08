@@ -1,26 +1,16 @@
 
-
 function getSlice (array, numberOfArrays) {
 
-    let array2 = [];
 
     if (numberOfArrays==undefined) {
-        array2=array[0];
+        return array[0];
     }
  
-   else {
-     for (i=0; i<numberOfArrays; i++){
-        
-        if (i<array.length) {
-            array2[i] = array[i];
-        }
-     }
-    }
-    
-    return array2;
+   else array = array.filter(arr => arr <= numberOfArrays);
+   
+   return array;
 }
 
-let newArray = getSlice([1,2,3,4,5], 7);
+let newArray = getSlice([1,2,3,4,5], 4);
 console.log(newArray);
-
 
